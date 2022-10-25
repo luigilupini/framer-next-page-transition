@@ -13,7 +13,7 @@ their presence in the tree, https://www.framer.com/docs/animate-presence.
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <div className="py-24 px-12 lg:px-48 font-GTWalsheimProBold">
+    <div className="relative h-screen overflow-hidden py-24 px-12 lg:px-48 font-GTWalsheimProRegular">
       <AnimatePresence initial={false}>
         <Navbar />
         <Component key={router.pathname} {...pageProps} />
