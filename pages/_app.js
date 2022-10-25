@@ -14,7 +14,7 @@ their presence in the tree, https://www.framer.com/docs/animate-presence.
 function MyApp({ Component, pageProps, router }) {
   return (
     <div className="py-24 px-12 lg:px-48 font-GTWalsheimProBold">
-      <AnimatePresence initial={false} mode={"wait"}>
+      <AnimatePresence initial={false}>
         <Navbar />
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>

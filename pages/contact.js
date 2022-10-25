@@ -2,9 +2,9 @@ import { motion as m } from "framer-motion";
 export default function Contact() {
   return (
     <m.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ y: "100%" }}
+      animate={{ y: 0 }}
+      exit={{ opacity: 1 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       className="absolute top-0 left-0 w-full h-full text-gray-900 bg-red-400 px-16 lg:px-48"
     >
@@ -18,7 +18,7 @@ export default function Contact() {
           <h4>Find us:</h4>
         </div>
         <div className="lg:text-6xl text-2xl underline">
-          <ul>
+          <ul className="text-2xl">
             <li className="pb-2">Twitter</li>
             <li className="pb-2">Instagram</li>
             <li className="pb-2">LinkedIn</li>
